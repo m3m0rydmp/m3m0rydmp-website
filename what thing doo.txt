@@ -1,0 +1,39 @@
+📂 Project File Structure & Overview
+
+• This document outlines key files and their purposes within the project, helping you navigate and modify different components effectively.
+
+🌐 Routes & Pages
+
+These files contain the core UI and functionality of different sections of the website.
+
+• app/routes/home/home.jsx → Handles the main homepage layout and content.
+• app/routes/home/profile.jsx → Contains the code for the "About" section.
+• app/routes/home/ → This folder holds all UI-related changes for the home page.
+• app/routes/contact/contact.jsx → Code for the "Contact Me" section. Modify this file to fix any errors related to the contact page.
+
+🏗️ Layout & Navigation
+
+These files control the overall structure and navigation of the site.
+
+• app/layouts/navbar/nav-data.js → Stores navigation menu data for the right sidebar.
+
+⚙️ Configuration & Settings
+
+• app/config.json → The main configuration file for the project. Modify this to update settings and preferences.
+
+🎨 UI Components & Icons
+
+These files contain reusable components for the UI.
+
+• app/components/icon/icons.svg → Stores all icons used in the sidebar and other sections.
+• app/components/monogram/monogram.jsx → Controls the site’s top-left logo, which changes to blue when hovered.
+
+📖 Storybook (UI Component Library)
+
+Storybook provides a dedicated environment to preview and test UI components separately.
+
+To view the Storybook interface, run:
+
+    npm run dev:storybook
+
+This will launch a webpage displaying all UI components in an isolated environment.
