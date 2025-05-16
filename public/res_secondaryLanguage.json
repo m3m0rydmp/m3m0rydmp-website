@@ -1,0 +1,120 @@
+{
+    "basic_info": {
+      "description_header": "Kamusta!",
+      "description": "Ako ay isang Penetration Tester at isang SOC Analyst. Masigasig ako sa larangan ng offensive security at laging sabik matuto ng mga bagong kaalaman. Gumagawa rin ako ng mga writeup tungkol sa mga challenge na nalulutas ko at mga bug na natutuklasan ko.",
+      "section_name": {
+        "about": "Tungkol sa Akin",
+        "projects": "Mga Proyekto",
+        "skills": "Mga Kasanayan",
+        "experience": "Karanasan"
+      }
+    },
+    "projects": [
+      {
+        "title": "Animal Shelter",
+        "startDate": "2020",
+        "description": "Najbardziej rozbudowana aplikacja nad którą miałam okazję pracować. Poznałam dużo technologii a mój kod by sprawdzany przez super opiekuna. Aplikacja obsługuje wszystkie procesy adopcji i pozwala na przechowywanie wszelkiej dokumentacji związanej z adopcją zwierząt ze schroniska.",
+        "images": [
+          "images/portfolio/animal-shelter/p1.jpg",
+          "images/portfolio/animal-shelter/p2.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      },
+      {
+        "title": "Photography",
+        "startDate": "2018",
+        "description": "Osobisty projekt na przedmiot ze studiów. Byłam odpowiedzilna za testowanie aplikacji, która optymalizuje zdjęcia z pomocą popularnych algorytmów używanych przed edytory grafiki takie jak Pixlr czy Adobe Photoshop. Otrzymałam 5-tkę za projekt :)",
+        "images": [
+          "images/portfolio/photography/p1.jpg",
+          "images/portfolio/photography/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "3D Object Viewer",
+        "startDate": "2015",
+        "description": "Jedna z pierwszych aplikacji nad którymi pracowałam na stażu. Musiałam przygotować front-end dla aplikacji, która pokazuje modele 3D znanych budynków. To był także mój pierwszy projekt w frameworku Angular. Dużo się nauczyłam!",
+        "images": [
+          "images/portfolio/adventure/p1.jpg",
+          "images/portfolio/adventure/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Alignex",
+        "title": "SOC Engineer L1 & Backup Penetration Tester",
+        "years": "01/2025 - present",
+        "mainTech": [
+          "Kali Linux"
+        ],
+        "technologies": [
+          "Wazuh",
+          "Wireshark",
+          "BurpSuite",
+          "Nmap",
+          "Metasploit",
+          "AD Hacking",
+          "Web Application Hacking",
+          "Network Hacking",
+          "Vulnerability Scanning"
+        ]
+      },
+      {
+        "company": "GuideM Real-World Cybersecurity Training",
+        "title": "Trainee",
+        "years": "08/2024 - 09/2024",
+        "mainTech": [
+          "EH:VAPT"
+        ],
+        "technologies": [
+          "Report Writing",
+          "Vulnerability Assessment",
+          "Exploitation",
+          "Privilege Escalation",
+          "Post-Exploitation",
+          "Pivoting",
+          "Exploit Development"
+        ]
+      }
+    ]
+  }
