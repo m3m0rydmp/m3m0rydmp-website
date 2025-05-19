@@ -66,11 +66,34 @@ header {
 }
 
 .skills-tile {
-	background-color: transparentize(#F8F5F4, 0.95);
-	padding: 10px 10px 5px 10px;
-	width: 100px;
-	margin: 5px 0 5px 0;
+	width: 120px;
+	height: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 5px auto;
+	background: #232323;   // dark background for visibility (adjust as needed)
 	border-radius: 8px;
+	box-sizing: border-box;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.05); // optional, for depth
+}
+
+.skills-tile p {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.skills-tile .iconify,
+.skills-tile i {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 8px;
 }
 
 .language {
@@ -251,7 +274,7 @@ header h1 {
 	text-align: left !important;
 	padding: 5px 8px 5px 8px !important;
 	vertical-align: baseline;
-	background-color: #f9f5e9 !important;
+	background-color: #4175a5 !important;
 	color: black;
 	font-weight: lighter !important;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
