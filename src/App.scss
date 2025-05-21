@@ -38,7 +38,7 @@ header {
 	-webkit-background-size: cover;
 	text-align: center;
 	overflow: hidden;
-	background-color: #e9d5a1;
+	/* background-color: #e9d5a1; */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -59,9 +59,9 @@ header {
 	padding: 8px 15px 2px 15px;
 	position: relative;
 	z-index: -500;
-	border-top: 5px solid #696969;
+	border-top: 5px solid rgba(105,105,105,0.3);
 	border-radius: 0 0 5px 5px;
-	background-color: #696969;
+	background-color: rgba(105,105,105,0.35);
 	color: white;
 }
 
@@ -98,7 +98,7 @@ header {
 
 .language {
 	font-size: 25px;
-	background-color: #e9d5a1;
+	background-color: transparent;
 	padding-bottom: 10px;
 	padding-top: 80px;
 }
@@ -132,7 +132,7 @@ header h1 {
 }
 
 #about {
-	background: #fff;
+	/* background: #fff; */
 	overflow: hidden;
 }
 
@@ -263,7 +263,7 @@ header h1 {
 	text-align: left !important;
 	padding: 5px 8px 5px 8px !important;
 	vertical-align: baseline;
-	background-color: #AE944F !important;
+	background-color: rgba(174,148,79,0.35) !important;
 	color: white;
 	font-weight: lighter !important;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -274,7 +274,7 @@ header h1 {
 	text-align: left !important;
 	padding: 5px 8px 5px 8px !important;
 	vertical-align: baseline;
-	background-color: #4175a5 !important;
+	background-color: rgba(65,117,165,0.35) !important;
 	color: black;
 	font-weight: lighter !important;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -283,6 +283,11 @@ header h1 {
 .vertical-timeline-element-date {
 	padding: 0 !important;
 	margin: 0 !important;
+	position: static !important;
+	text-align: left !important;
+	opacity: 0.85;
+	float: none !important;
+
 }
 
 @media only screen and (max-width: 1170px) {
@@ -312,7 +317,7 @@ header h1 {
 .bars li {
 	position: relative;
 	margin-bottom: 60px;
-	background: #ccc;
+	background: rgba(204,204,204,0.35);
 	height: 42px;
 	border-radius: 3px;
 }
@@ -333,7 +338,7 @@ header h1 {
 	top: 0;
 	margin: 0;
 	padding-right: 24px;
-	background: #313131;
+	background: rgba(49,49,49,0.35);
 	display: inline-block;
 	height: 42px;
 	line-height: 42px;
@@ -379,7 +384,7 @@ header h1 {
 }
 
 #portfolio {
-	background: #efe1bd;
+	/* background: #efe1bd; */
 	padding-bottom: 5%;
 }
 
@@ -415,7 +420,7 @@ header h1 {
 }
 
 #skills {
-	background: #1F1F1F;
+	/* background: #1F1F1F; */
 	min-height: 200px;
 	width: 100%;
 	overflow: hidden;
@@ -440,7 +445,7 @@ header h1 {
 }
 
 footer {
-	background: #1F1F1F;
+	/* background: #1F1F1F; */
 	min-height: 100px;
 	width: 100%;
 	overflow: hidden;
@@ -463,4 +468,131 @@ footer a:focus {
 .social-links {
 	margin-top: 50px;
 	font-size: 22px;
+}
+
+/* Blog Page Styles */
+.blog-outer-container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: rgba(255, 255, 255, 0.65); /* more transparent for light */
+  transition: background 0.3s, color 0.3s;
+}
+body[data-theme="dark"] .blog-outer-container {
+  background: rgba(30, 30, 30, 0.65); /* more transparent for dark */
+}
+
+.blog-theme-toggle-row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem 0 0 0;
+}
+
+.blog-theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+  margin-right: 2.5rem;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.blog-inner-container {
+  background: #fff;
+  color: #232323;
+  max-width: 700px;
+  width: 100%;
+  margin: 2rem auto 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 2.5rem 2rem;
+  position: relative;
+  transition: background 0.3s, color 0.3s;
+}
+
+body[data-theme="dark"] .blog-inner-container {
+  background: #232323;
+  color: #f3f3f3;
+}
+
+body[data-theme="light"] {
+  background: #e9d5a1 !important;
+  color: #5a4632;
+}
+body[data-theme="light"] .blog-inner-container,
+body[data-theme="light"] .card,
+body[data-theme="light"] .container,
+body[data-theme="light"] .section,
+body[data-theme="light"] .blog-card,
+body[data-theme="light"] .blog-list-card,
+body[data-theme="light"] .blog-detail-card,
+body[data-theme="light"] .foto div,
+body[data-theme="light"] .polaroid span,
+body[data-theme="light"] .modal-inside .modal-content {
+  background: linear-gradient(135deg, #e9d5a1 80%, #f3e3c3 100%) !important;
+  color: #5a4632 !important;
+  border: 1.5px solid #c9a86a;
+  box-shadow: 0 6px 32px 0 #b89b6a33;
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+}
+
+body[data-theme="light"] #experience,
+body[data-theme="light"] .experience-badge,
+body[data-theme="light"] .main-badge,
+body[data-theme="light"] .vertical-timeline-element-date {
+  color: #5a4632 !important;
+  background: #f3e3c3 !important;
+  border: 1px solid #c9a86a !important;
+}
+
+.blog-markdown-content {
+  text-align: left;
+}
+.blog-markdown-content h1,
+.blog-markdown-content h2,
+.blog-markdown-content h3 {
+  text-align: center;
+}
+.blog-markdown-content ul {
+  margin-left: 1.5em;
+}
+
+#about, #portfolio, #resume, header, footer {
+  background: transparent !important;
+  overflow: unset;
+}
+body[data-theme="dark"] #about,
+body[data-theme="dark"] #portfolio,
+body[data-theme="dark"] #resume,
+body[data-theme="dark"] header,
+body[data-theme="dark"] footer {
+  background: transparent !important;
+}
+
+header, #about, #portfolio, #resume, #skills, footer, .blog-outer-container {
+  background: transparent !important;
+}
+body[data-theme="light"] header,
+body[data-theme="light"] #about,
+body[data-theme="light"] #portfolio,
+body[data-theme="light"] #resume,
+body[data-theme="light"] #skills,
+body[data-theme="light"] footer,
+body[data-theme="light"] .blog-outer-container {
+  background: transparent !important;
+}
+body[data-theme="dark"] header,
+body[data-theme="dark"] #about,
+body[data-theme="dark"] #portfolio,
+body[data-theme="dark"] #resume,
+body[data-theme="dark"] #skills,
+body[data-theme="dark"] footer,
+body[data-theme="dark"] .blog-outer-container {
+  background: transparent !important;
 }

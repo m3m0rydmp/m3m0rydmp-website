@@ -20,7 +20,7 @@ body[data-theme="dark"] {
    }
 
    .language {
-      background-color: #494949;
+      background-color: transparent;
    }
 
    .link-href {
@@ -33,33 +33,45 @@ body[data-theme="dark"] {
    }
 
    header {
-      background-color: #494949;
+      background-color: transparent;
       h1 {
          color: white;
       }
    }
 
    #about {
-      background-color: #7f7f7f;
+      background-color: transparent;
       h1 span {
          color: white;
       }
       .polaroid span {
-         background:  #6d6d6d;
+         background: linear-gradient(135deg, #2a2a2a 80%, #3a3a3a 100%);
+         border: 1.5px solid #4a4a4a;
+         box-shadow: 0 6px 32px 0 rgba(0,0,0,0.3);
+         backdrop-filter: blur(8px);
+         border-radius: 16px;
       }
       .card {
-         background: #6d6d6d;
+         background: linear-gradient(135deg, #2a2a2a 80%, #3a3a3a 100%);
          color: white;
+         border: 1.5px solid #4a4a4a;
+         box-shadow: 0 6px 32px 0 rgba(0,0,0,0.3);
+         backdrop-filter: blur(8px);
+         border-radius: 16px;
       }
    }
 
    #portfolio {
-      background: #5b5b5b;
+      background: transparent;
       .section-title {
          color: white !important;
       }
       .foto div {
-         background: #6d6d6d;
+         background: linear-gradient(135deg, #2a2a2a 80%, #3a3a3a 100%);
+         border: 1.5px solid #4a4a4a;
+         box-shadow: 0 6px 32px 0 rgba(0,0,0,0.3);
+         backdrop-filter: blur(8px);
+         border-radius: 16px;
       }
       .project-title-settings {
          color: white;
@@ -68,18 +80,26 @@ body[data-theme="dark"] {
 
    #resume {
       filter: brightness(80%);
-      background: #5b5b5b;
+      background: transparent;
       .section-title {
          color: white !important;
       }
 
       .experience-badge {
-         background: #807a7a !important;
+         background: linear-gradient(135deg, #2a2a2a 80%, #3a3a3a 100%) !important;
          color: white;
+         border: 1.5px solid #4a4a4a;
+         box-shadow: 0 6px 32px 0 rgba(0,0,0,0.3);
+         backdrop-filter: blur(8px);
+         border-radius: 16px;
       }
 
       .main-badge {
-         background: #919191 !important;
+         background: linear-gradient(135deg, #2a2a2a 80%, #3a3a3a 100%) !important;
+         border: 1.5px solid #4a4a4a;
+         box-shadow: 0 6px 32px 0 rgba(0,0,0,0.3);
+         backdrop-filter: blur(8px);
+         border-radius: 16px;
       }
 
       .vertical-timeline-element-date {
@@ -87,21 +107,47 @@ body[data-theme="dark"] {
       }
 
       .vertical-timeline-element-icon {
-         background: #919191 !important;
+         background: linear-gradient(135deg, #2a2a2a 80%, #3a3a3a 100%) !important;
+         border: 1.5px solid #4a4a4a;
+         box-shadow: 0 6px 32px 0 rgba(0,0,0,0.3);
+         backdrop-filter: blur(8px);
+         border-radius: 16px;
       }
       @media only screen and (max-width: 1169px) { 
          .vertical-timeline-element-date {
-            color: black;
+            color: white;
          }
       }
    }
 
    .modal-inside .modal-content {
-      background: #5b5b5b;
+      background: linear-gradient(135deg, #2a2a2a 80%, #3a3a3a 100%);
       color: white;
+      border: 1.5px solid #4a4a4a;
+      box-shadow: 0 6px 32px 0 rgba(0,0,0,0.3);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
    }
 
    .close-icon {
       color: white;
+   }
+
+   .blog-inner-container,
+   .card,
+   .container,
+   .section,
+   .blog-card,
+   .blog-list-card,
+   .blog-detail-card,
+   .foto div,
+   .polaroid span,
+   .modal-inside .modal-content {
+      background: linear-gradient(135deg, #2a2a2a 80%, #3a3a3a 100%) !important;
+      color: #f3f3f3 !important;
+      border: 1.5px solid #4a4a4a;
+      box-shadow: 0 6px 32px 0 rgba(0,0,0,0.3);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
    }
 }
